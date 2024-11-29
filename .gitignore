@@ -66,6 +66,18 @@ LCoinDB/!gradle-wrapper.jar
 LegitiCoinDB-server/.env
 LegitiCoinDB-server/node_modules
 
+# LegitiCoinDB-server-go
+LegitiCoinDB-server-go/*.exe
+LegitiCoinDB-server-go/*.exe~
+LegitiCoinDB-server-go/*.dll
+LegitiCoinDB-server-go/*.so
+LegitiCoinDB-server-go/*.dylib
+LegitiCoinDB-server-go/*.test
+LegitiCoinDB-server-go/LegitiCoinDB-server
+LegitiCoinDB-server-go/go.work
+LegitiCoinDB-server-go/go.work.sum
+LegitiCoinDB-server-go/.env
+
 # LCoinDB-Server (Paper Plugin)
 LCoinDB-Server/.idea/
 LCoinDB-Server/*.iml
