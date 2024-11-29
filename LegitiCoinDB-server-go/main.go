@@ -32,7 +32,7 @@ func top10(w http.ResponseWriter, players *mongo.Collection) {
 	defer cancel()
 
 	// Find top 10 players sorted by score in descending order
-	findOptions := options.Find().SetLimit(10).SetSort(bson.D{{"Lcoins", -1}})
+	findOptions := options.Find().SetLimit(10).SetSort(bson.D{{Key: "Lcoins", Value: -1}})
 	cursor, err := players.Find(ctx, bson.D{}, findOptions)
 	if err != nil {
 		http.Error(w, "Error fetching top players", http.StatusInternalServerError)
